@@ -1,4 +1,4 @@
-let words: array(string) = [|
+let words = [|
   "abandon",
   "ability",
   "able",
@@ -2048,3 +2048,6 @@ let words: array(string) = [|
   "zone",
   "zoo",
 |];
+
+let toTxt = () =>
+  Array.fold_left((acc, elem) => acc ++ "\n" ++ elem, "", words);
