@@ -5,9 +5,18 @@ var Jest = require("@glennsl/bs-jest/src/jest.js");
 var Wordlist$ReBip39 = require("../src/Wordlist.bs.js");
 
 describe("Word List", (function () {
-        return Jest.test("should have 2048 words", (function () {
-                      return Jest.Expect[/* toBe */2](2048, Jest.Expect[/* expect */0](Wordlist$ReBip39.words.length));
+        Jest.test("should have 2048 words", (function () {
+                return Jest.Expect[/* toBe */2](2048, Jest.Expect[/* expect */0](Wordlist$ReBip39.words.length));
+              }));
+        return Jest.test("should have 13116 bytes", (function () {
+                      return Jest.Expect[/* toBe */2](13116, Jest.Expect[/* expect */0](Wordlist$ReBip39.toTxt(/* () */0).length));
                     }));
       }));
 
+var expectedWords = 2048;
+
+var expectedBytes = 13116;
+
+exports.expectedWords = expectedWords;
+exports.expectedBytes = expectedBytes;
 /*  Not a pure module */
