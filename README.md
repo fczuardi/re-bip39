@@ -1,5 +1,7 @@
 # re-bip39
 
+WORK IN PROGRESS - NOT USABLE
+
 A ReasonML implementation of [BIP0039][bip39]: Mnemonic code for generating deterministic keys
 
 ## Default Wordlist
@@ -22,6 +24,16 @@ yarn build
 
 ```
 yarn start
+```
+
+### Run tests
+```
+yarn test
+```
+
+### Watch run tests
+```
+yarn test --watch
 ```
 
 ## LICENSE (AGPL 3.0)
